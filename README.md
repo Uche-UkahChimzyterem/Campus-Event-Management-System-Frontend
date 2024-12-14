@@ -120,9 +120,6 @@ The live project is deployed and can be accessed here:
 ## Contributing
 Anyone can help! Fork the repo, make changes, and submit a pull request with improvements or bug fixes.
 
-Uche-Ukah Chimzyterem Janet
- License
-
 
 ## Contact Information
 For any inquiries or feedback, feel free to reach out to [uche-ukah.chimzyterem@gmail.com].
