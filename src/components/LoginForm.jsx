@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import axios from 'axios';
+import api from '../middleware/api';
 const LoginForm = () => {
     const navigate = useNavigate();
     const [user,setUser] = useState({
@@ -17,7 +17,7 @@ const LoginForm = () => {
         e.preventDefault();
         setLoading(true);
 
-    await axios.post('http://localhost:4000/api/auth/login', user).then((res) => {
+    await api.post('/api/auth/login', user).then((res) => {
         setLoading(false);
         console.log(res);
         localStorage.setItem('token', res.data.token);

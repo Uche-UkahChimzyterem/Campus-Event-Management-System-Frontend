@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import EventsCards from '../components/EventsCards';
 
-import axios from 'axios';
+import api from '../middleware/api';
 
 const UserDashboardPage = () => {
   const [user, setUser] = useState(null); // Set initial state to null for clarity
@@ -20,7 +20,7 @@ const UserDashboardPage = () => {
 
   const fetchUserEvents = async (userId) => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/events/getUserEvents/${userId}`);
+      const res = await api.get(`/api/events/getUserEvents/${userId}`);
       setEvents(res.data.events);
     } catch (err) {
       console.error("Error fetching user events:", err);
@@ -32,7 +32,7 @@ const UserDashboardPage = () => {
   };
   const handleCancelRSVP = async (eventId) => {
    try {
-     await axios.delete(`http://localhost:4000/api/events/cancelRSVP/${eventId}`).then(res => {
+     await api.delete(`/api/events/cancelRSVP/${eventId}`).then(res => {
       if(res.data.message === "RSVP cancelled successfully") {
         alert(res.data.message);
         window.location.reload();

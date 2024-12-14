@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Select from 'react-select'
-import axios from 'axios';
+import api from '../middleware/api';
 
 const SignUpForm = () => {
     const navigate = useNavigate();
@@ -45,7 +45,7 @@ const SignUpForm = () => {
             preferences: userDetails.eventPreferences
         }   
 
-        await axios.post('http://localhost:4000/api/auth/register', user).then((res) => {
+        await api.post('/api/auth/register', user).then((res) => {
             setLoading(false);
             console.log(res);
             localStorage.setItem('user', JSON.stringify(res.data.user));

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios';
+import api from '../middleware/api';
 
 const CreateEventForm = () => {
   const [loading,setLoading] = useState(false);
@@ -18,7 +18,7 @@ const CreateEventForm = () => {
         e.preventDefault();
         setLoading(true);
         console.log(event);
-        axios.post('http://localhost:4000/api/events/createEvent', event)
+        api.post('/api/events/createEvent', event)
             .then(res => {
                 setLoading(false);
                 alert(res.data.message);

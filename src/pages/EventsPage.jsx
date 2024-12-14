@@ -5,7 +5,6 @@ import EventsCards from '../components/EventsCards';
 import { FaCalendarAlt, FaTags } from "react-icons/fa";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import axios from 'axios';
 import api from "../middleware/api";
 
 const EventsPage = () => {
@@ -15,7 +14,7 @@ const EventsPage = () => {
 
   const getEvents = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/api/events/getEvents');
+      const res = await api.get('/api/events/getEvents');
       setEvents(res.data.events);
     } catch (err) {
       console.error(err);
