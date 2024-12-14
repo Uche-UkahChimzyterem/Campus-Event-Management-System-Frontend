@@ -56,7 +56,7 @@ The live project is deployed and can be accessed here:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/campus-event-management.git
+   git clone https://github.com/Uche-UkahChimzyterem/Campus-Event-Management-System-Frontend
    ```
 
 2. Navigate to the project directory:  
@@ -97,7 +97,7 @@ The live project is deployed and can be accessed here:
      ```
 
 6. Access the application: 
-   - Backend: [http://localhost:3000](http://localhost:4000)  
+   - Backend: [http://localhost:4000](http://localhost:4000)  
    - Frontend: [http://localhost:5173](http://localhost:5173)
 
 ---
