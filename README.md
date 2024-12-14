@@ -79,7 +79,7 @@ The live project is deployed and can be accessed here:
 4. Environment Variables:  
    Create a `.env` file in the `Nodejs-supabase` directory and add your environment variables:  
    ```env
-   PORT=3000  
+   PORT=4000  
    JWT_SECRET=your_jwt_secret  
    JWT_EXPIRES=1d
    ```
