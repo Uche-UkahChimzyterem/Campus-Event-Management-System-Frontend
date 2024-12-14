@@ -32,7 +32,7 @@ Find the backend repository for this project at:
 
 #### Deployed Project  
 The live project is deployed and can be accessed here:  
-[**Deployed Project Link**]
+[https://campus-event-management-system-frontend-ashen.vercel.app/]
 
 ---
 
