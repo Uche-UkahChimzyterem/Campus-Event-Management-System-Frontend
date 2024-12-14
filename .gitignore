@@ -2,7 +2,6 @@
 /dist/
 /build/
 /public/
-/src/
 /public/
 .env
 .env.local
