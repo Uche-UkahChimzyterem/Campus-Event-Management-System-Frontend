@@ -26,7 +26,7 @@ The Campus Event Management application is designed to streamline event planning
 
 #### Backend Repository  
 Find the backend repository for this project at:  
-[**Backend Repo Link**]
+[https://github.com/Uche-UkahChimzyterem/Campus-Event-Management-System-Backend]
 
 ---
 
